@@ -253,7 +253,7 @@ class ASTModel(nn.Module):
             new_pos_embed = torch.nn.functional.interpolate(new_pos_embed, size=(f_dim, t_dim), mode='bilinear')
             new_pos_embed = new_pos_embed.reshape(1, 768, num_patches).transpose(1, 2)
             self.v.pos_embed = nn.Parameter(torch.cat([self.v.pos_embed[:, :2, :].detach(), new_pos_embed], dim=1))
-        graft_gfsa_into_timm(self.v, order_h=4, renorm=False)
+        self.v = graft_gfsa_into_timm(self.v, order_h=4, renorm=False)
     def get_shape(self, fstride, tstride, input_fdim=256, input_tdim=1024):
         test_input = torch.randn(1, 1, input_fdim, input_tdim)
         test_proj = nn.Conv2d(1, self.original_embedding_dim, kernel_size=(16, 16), stride=(fstride, tstride))
