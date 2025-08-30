@@ -1,0 +1,6 @@
+torch 
+torchvision 
+torchaudio --upgrade
+transformers==4.38.0
+dataclasses  
+typing-extensions
