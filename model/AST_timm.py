@@ -7,6 +7,7 @@ import wget
 import timm
 from copy import deepcopy
 from timm.models.layers import to_2tuple,trunc_normal_
+import torch.nn.functional as F
 
 
 class GFSA_Attn_Timm(nn.Module):
