@@ -4,7 +4,7 @@
 
 ## AST-GFSA
 
-This repository focuses on modifying  Audio spectrogram Transformer from <a href="https://arxiv.org/abs/2104.01778">AST</a> paper with Graph Filter based Self Attention (GFSA)  introduced in the Neuroips paper <a href="https://arxiv.org/pdf/2312.04234">"Graph Convolutions Enrich the Self-Attention in
+This repository focuses on modifying  Audio spectrogram Transformer from <a href="https://arxiv.org/abs/2104.01778">AST</a> paper with Graph Filter based Self Attention (GFSA)  introduced in the Neurips paper <a href="https://arxiv.org/pdf/2312.04234">"Graph Convolutions Enrich the Self-Attention in
 Transformers"</a>
 
 ## Usage
