@@ -33,7 +33,7 @@ model = AST_GFSA(
 
 - [ ] experiment on some siganl processing focussed datasets.
 - [ ] add results.
-- [ ] Maybe add some fitler response curves?
+- [ ] Maybe add some spectral bias of attention maps curves?
 
 
 
